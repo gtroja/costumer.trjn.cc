@@ -26,5 +26,27 @@ I'll start by:
     - a new client modal:
 
     - a new/edit contact modal:
+    
+I think for data will have:
+    contact:
+        name, email, tel : string
+    clients:
+        contact client
+        contact[] contactList
+    user:
+        id?
+        clients?
+        
+   ------------- Will put this format in the mariadb (maybe postgres?)
+
+   I'll have a lisp shel to regulate user acess
+   i'll have an api for login, and to crud user info, clients and their contact
+   i'll try to launch one thread per api call
+   ----------------
+   I'll try to design it in a way I describe the whole system in a human readable way and 
+   generate the front and back by that description;
+   
+   
+   
 
 I plan to use the react router. After having those with mock data, I'll model the REST API and I'll describe it using OpenAPI; After that I'll implement and publish a mock server and implement the frontend services. Having those ready, I'll architect the backend. well well
